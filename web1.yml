@@ -1,0 +1,7 @@
+- hosts: centos
+  tasks: 
+  - shell: "uname -r"
+    register: kernel_version
+
+  - debug:
+      msg: "Your kernel version is {{kernel_version.stdout}}"
