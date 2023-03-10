@@ -1,4 +1,4 @@
-- hosts: centos
+- hosts: all
   tasks: 
   - shell: "uname -r"
     register: kernel_version
